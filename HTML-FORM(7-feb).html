@@ -1,0 +1,102 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Html Form</title>
+	</head>
+	<body>
+	<form action="submit.html" method="POST">
+		<table cellspacing="15px" align="center">
+			<tr>
+				<th colspan="2"><h1>Form</h1></th>
+			</tr>
+			<tr>
+				<td><label>Name :</label></td>
+				<td><input type="text" name="Uname" placeholder="Enter Username" required></td>
+			</tr>
+			<tr>
+				<td><label>Email :</label></td>
+				<td><input type="Email" name="mail" placeholder="Enter your email"></td>
+			</tr>
+			<tr>
+				<td><label>Password :</label></td>
+				<td><input type="password" name="password" placeholder="Enter password"></td>
+			</tr>
+			<tr>
+				<td><label>Contact :</label></td>
+				<td><input type="number" name="contact" placeholder="Enter your contact"></td>
+			</tr>
+			<tr>
+				<td><label>Gender :</label></td>
+				<td><input type="radio" name="gender" value="1">Male
+					<input type="radio" name="gender" value="2">Female
+				</td>
+			</tr>
+			<tr>
+				<td><label>DOB :</label></td>
+				<td><input type="date" name="dob"></td>
+			</tr>
+			<tr>
+				<td><label>Time :</label></td>
+				<td><input type="time" name="time"></td>
+			</tr>
+			<tr>
+				<td><label>Address :</label></td>
+				<td><textarea rows="7"></textarea></td>
+			</tr>
+			<tr>
+				<td><label>City :</label></td>
+				<td><input list="cities">
+					<datalist id="cities">
+						<option>Jalandher</option>
+						<option>Barnala</option>
+						<option>Pathankot</option>
+						<option>Hoshiarpur</option>
+						<option>Ludhiana</option>
+						<option>Amritsar</option>
+						<option>Bathinda</option>
+						<option>Patiala</option>
+					</datalist>
+				</td>
+			</tr>
+			<tr>
+				<td><label>States :</label></td>
+				<td>
+					<select name="states">
+						<option selected disabled value="">Select State</option>
+						<option value="1">Punjab</option>
+						<option value="2">Haryana</option>
+						<option value="3">Gujrat</option>
+						<option value="4">Bihar</option>
+						<option value="5">Karnataka</option>
+						<option value="6">Kerala</option>
+						<option value="7">Goa</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Range :</label></td>
+				<td><input type="range" value="70"></td>
+			</tr>
+			<tr>
+				<td><label>Color :</label></td>
+				<td><input type="color" name="color"></td>
+			</tr>
+			<tr>
+				<td><label>Image :</label></td>
+				<td><input type="file" name="image">
+			</tr>
+			<input type="hidden" value="sagar123" name="user_id">
+			<tr>
+				<td></td>
+				<td><input type="checkbox" checked>T&C </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center" ><button type="submit">Submit</button>
+					&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset">Reset</button></td>
+				
+			</tr>
+			
+		</table>
+	</form>	
+	</body>
+</html>
